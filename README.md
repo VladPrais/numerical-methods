@@ -1,5 +1,8 @@
+
 This repository is a little clue, that can help you to undestand how to
-- solve **differential equations** using Euler and Runge-Kutta methods.
+- solve **differential equations** using Euler and Runge-Kutta methods
+- solve **algebraic** and **transcendental** equations using iteration method, false position method and Newton method
+- interpolate using Lagrange interpolating polynomial
 ### Solving initial value problem
 Let's write the formulas, assuming that:
 $$h=x_{n+1}-x_n$$
@@ -26,3 +29,8 @@ $$x_{n+1}=\phi(x_{n})$$
 $$x_{2}=\displaystyle\frac{f(x_{1})x_{0}-f(x_{0})x_{1}}{f(x_{1})-f(x_{0})}$$
 ##### Newton method:
 $$x_{n+1}=x_{n}-\displaystyle\frac{f(x_{n})}{f'(x_{n})}$$
+### Interpolation
+The Lagrange polynomial is one of methods function interpolations.
+For computing Lagrange polynomials, it is useful to write them as a linear combination of Lagrange basis polynomials:
+
+$$L_{n} = \displaystyle\sum^{n}_{i=1}f(x_{i})\prod ^{n}_{j=1, i\neq j}\frac{x - x_{j}}{x_{i} - x_{j}}$$
