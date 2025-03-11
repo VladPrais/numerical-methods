@@ -29,8 +29,7 @@ $$x_{n+1}=\phi(x_{n})$$
 $$x_{2}=\displaystyle\frac{f(x_{1})x_{0}-f(x_{0})x_{1}}{f(x_{1})-f(x_{0})}$$
 ##### Newton method:
 $$x_{n+1}=x_{n}-\displaystyle\frac{f(x_{n})}{f'(x_{n})}$$
-### Interpolation
+### Interpolation:
 The Lagrange polynomial is one of methods function interpolations.
-For computing Lagrange polynomials, it is useful to write them as a linear combination of Lagrange basis polynomials:
-
-$$L_{n} = \displaystyle\sum^{n}_{i=1}f(x_{i})\prod ^{n}_{j=1, i\neq j}\frac{x - x_{j}}{x_{i} - x_{j}}$$
+For computing Lagrange polynomials, it is useful to write them as a linear combination of Lagrange basis polynomials:\
+$`L_{n}=\sum^{n}_{i=1}f(x_{i})\prod^{n}_{j=1,i \neq j}\frac{x-x_{j}}{x_{i}-x_{j}}`$
