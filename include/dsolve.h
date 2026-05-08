@@ -3,6 +3,8 @@
 
 #include <vector>
 
+/* FuncType must be `Range(double, Range)` structure` for all methods. */
+
 template <typename FuncType, typename Domain, typename Range>
 std::vector<Range> euler_method(FuncType f, const Domain &x, const Range &y0)
 {
